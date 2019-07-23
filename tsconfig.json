@@ -6,7 +6,7 @@
     "lib": [
       "esnext",
       "esnext.asynciterable",
-      "dom"
+      "dom",
     ],
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -15,6 +15,7 @@
     "strict": true,
     "noImplicitAny": false,
     "noEmit": true,
+    "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
       "~/*": [
@@ -28,5 +29,6 @@
       "@types/node",
       "@nuxt/vue-app"
     ]
-  }
+  },
+  "exclude": ["node_modules/element-ui/types/*.d.ts"]
 }
